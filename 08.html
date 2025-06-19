@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+        header,footer {
+            display: flex;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            padding: 10px;
+            list-style: none;
+        }
+         nav ul li{
+            display: inline;
+            margin: 0 10px;
+        }
+        #upcoming-events{
+            border: 10px;
+            margin: 10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        .container{
+            margin: 10px;
+            padding: 10px;
+            border: 10px;
+            border-radius: 0 15px;
+            background-color: antiquewhite;
+        }
+    
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#highlights">Past Events</a></li>
+                <li><a href="#contact">Contact Organizers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="calendar">
+                <article>
+                    <h3>Music Festival</h3>
+                    <p><strong>Date:</strong> June 15, 2025</p>
+                    <p><strong>Location:</strong> Central Park</p>
+                    <p>Enjoy a day filled with live music from top artists.</p>
+                </article>
+                <article>
+                    <h3>Food Expo</h3>
+                    <p><strong>Date:</strong> July 10, 2025</p>
+                    <p><strong>Location:</strong> City Hall Plaza</p>
+                    <p>Experience the best food from local and international chefs.</p>
+                </article>
+            </div>
+        </section>
+
+        <aside id="highlights">
+            <h2>Past Events</h2>
+            <ul>
+                <li><a href="#">New Year Celebration 2025</a></li>
+                <li><a href="#">Spring Art Exhibition</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Event Calendar | <a href="#">Event Policies</a></p>
+        <p><a href="#contact">Event Organizers</a></p>
+    </footer>
+</body>
+</html>
