@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+        .aside{
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-left: 2px solid #ccc;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Product Comparison</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" style="color:white;">Home</a></li>
+                <li><a href="#" style="color:white;">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="product">
+            <h2>Product A</h2>
+            <p>Price: $499</p>
+            <p>Features: Feature 1, Feature 2</p>
+        </article>
+
+        <article class="product">
+            <h2>Product B</h2>
+            <p>Price: $599</p>
+            <p>Features: Feature 1, Feature 2</p>
+        </article>
+
+        <aside class="aside">
+            <h3>Customer Reviews</h3>
+            <p>Product A: ★★★★☆</p>
+            <p>Product B: ★★★☆☆</p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p><a href="#">Help Center</a> | &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
