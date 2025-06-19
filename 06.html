@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        /* Header */
+        .header {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .news-item {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Sidebar */
+        .aside {
+            background: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>News Daily</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="news-item">
+            <h2>Top Story</h2>
+            <p>Latest news update goes here...</p>
+        </article>
+        <article class="news-item">
+            <h2>Another News</h2>
+            <p>More news content...</p>
+        </article>
+
+        <aside class="aside">
+            <h3>Trending News</h3>
+            <ul>
+                <li><a href="#">Trending Story 1</a></li>
+                <li><a href="#">Trending Story 2</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>Contact: info@newsdaily.com | &copy; 2025 News Daily</p>
+    </footer>
+
+</body>
+</html>
