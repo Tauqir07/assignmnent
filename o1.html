@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Header Effect</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .header.scrolled {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .header.scrolled .logo {
+            color: yellow;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .header.scrolled .nav ul li a {
+            color: yellow;
+        }
+
+        /* Background Image Section */
+        .hero {
+            height: 100vh;
+            background: url('hbk.01.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MyLogo</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        Scroll Down to See the Effect
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('.header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+
+</body>
+</html>
